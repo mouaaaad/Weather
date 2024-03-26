@@ -7,6 +7,8 @@ import { NavbarsComponent } from './navbars/navbars.component';
 import { WeatherInfoComponent } from './weather-info/weather-info.component';
 import { TwitterFeedComponent } from './twitter-feed/twitter-feed.component';
 import { DayWeatherComponent } from './day-weather/day-weather.component';
+import { WeatherCardComponent } from './weather-card/weather-card.component';
+import { WeatherDetailsComponent } from './weather-details/weather-details.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { DayWeatherComponent } from './day-weather/day-weather.component';
     NavbarsComponent,
     WeatherInfoComponent,
     TwitterFeedComponent,
-    DayWeatherComponent
+    DayWeatherComponent,
+    WeatherCardComponent,
+    WeatherDetailsComponent
   ],
   imports: [
     BrowserModule

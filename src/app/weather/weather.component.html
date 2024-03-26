@@ -1,10 +1,7 @@
-<div class="twitter-feed flex p-6 bg-[#f1e5eb]">
-     <app-twitter-feed class="flex-1 max-w-lg"></app-twitter-feed>
-     <div class="w-1 bg-blue-500"></div>
-     <div class="flex flex-1 p-6 items-center">
-          <div *ngFor="let weather of weathers" class="flex-1">
-               <app-day-weather [weather]="weather" ></app-day-weather>  
-          </div>
-     </div> 
-</div>
+<div class="flex flex-1 p-6 items-center">
+     <div *ngFor="let weathercard of weathercards" class="flex-1">
+          <app-weather-card [weathercard]="weathercard" ></app-weather-card>  
+     </div>
+</div> 
+
   

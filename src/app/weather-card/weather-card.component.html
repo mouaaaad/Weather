@@ -1,0 +1,25 @@
+<section class="weathercard font-sans text-white">
+  <p class="text-center text-2xl">{{weathercard.cityName}}</p>
+  <div class="pt-4 flex justify-center">
+    <img [src]="weathercard.image" class="max-w-32 h-32">
+  </div>
+  <div class="pt-4">
+    <p class="text-center font-bold text-2xl"> {{weathercard.temperature}}°</p>
+    <p class="text-center text-2xl">{{ weathercard.state }}</p>
+  </div>
+  <section class="pt-4 flex">
+    <div class="flex-1">
+      <img src="..\assets\triangle.png" class="max-w-8 h-8 ml-12">
+      <p class="text-center text-2xl"> minTemp </p>
+      <p class="text-center text-2xl">{{weathercard.minTemp}}</p>
+    </div>
+    <div class="flex-1">
+      <img src="..\assets\down.png" class="max-w-8 h-8 ml-12">
+      <p class="text-center text-2xl"> maxTemp </p>
+      <p class="text-center text-2xl">{{weathercard.maxTemp}}</p>
+    </div>
+   </section>
+<section>
+
+
+

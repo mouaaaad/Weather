@@ -1,0 +1,15 @@
+.weathercard {
+    box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+    justify-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    width: 19rem;
+    height: 30rem;
+    background: linear-gradient(to bottom, #1B1742, #40359C);
+    border-radius: 1.75rem;
+  }
+
+  
+
+
+  

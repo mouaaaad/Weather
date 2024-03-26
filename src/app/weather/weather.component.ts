@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Weather } from '../Interface/weather';
+import { IWeatherCard } from '../models/weather-card';
+import { WeatherCardService } from '../services/weather-card.service';
 
 @Component({
   selector: 'app-weather',
@@ -7,41 +8,11 @@ import { Weather } from '../Interface/weather';
   styleUrls: ['./weather.component.css']
 })
 export class WeatherComponent implements OnInit {
-  weathers: Weather[] = [];
+  weathercards: IWeatherCard[] = [];
+
+  constructor(private weatherCardService : WeatherCardService){}
+
   ngOnInit(): void {
-    this.weathers.push({
-      day: "MON",
-      condition: "RANNIG",
-      temperature: 9,
-      image: "..\\assets\\pluvieux.png"
-    });
-
-    this.weathers.push({
-      day: "TUE",
-      condition: "SUNNY",
-      temperature: 15,
-      image: "..\\assets\\soleil.png"
-    });
-
-    this.weathers.push({
-      day: "WED",
-      condition: "CLOUDY",
-      temperature: 11,
-      image: "..\\assets\\nuageux.png"
-    });
-
-    this.weathers.push({
-      day: "THU",
-      condition: "SUNNY",
-      temperature: 19,
-      image: "..\\assets\\soleil.png"
-    });
-
-    this.weathers.push({
-      day: "FRI",
-      condition: "CLOUDY",
-      temperature: 12,
-      image: "..\\assets\\nuageux.png"
-    });
+    this.weathercards = this.weatherCardService.getAll();
   }
 }

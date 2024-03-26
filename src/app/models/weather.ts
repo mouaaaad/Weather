@@ -1,4 +1,4 @@
-export interface Weather {
+export interface IWeather {
     day: string;
     condition: string;
     temperature: number;
